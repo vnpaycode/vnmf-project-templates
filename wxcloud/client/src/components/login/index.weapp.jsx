@@ -1,5 +1,5 @@
-import Taro, { Component } from "@tarojs/taro"
-import { View, Text, Button } from "@tarojs/components"
+import Vnmf, { Component } from "@vnxjs/vnmf"
+import { View, Text, Button } from "@vnxjs/components"
 
 export default class Login extends Component {
   state = {
@@ -17,7 +17,7 @@ export default class Login extends Component {
   componentDidHide() {}
 
   getLogin = () => {
-    Taro.cloud
+    Vnmf.cloud
       .callFunction({
         name: "login",
         data: {}

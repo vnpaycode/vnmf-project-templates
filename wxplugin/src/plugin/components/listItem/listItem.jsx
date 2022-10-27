@@ -1,5 +1,5 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import Vnmf, { Component } from '@vnxjs/vnmf'
+import { View } from '@vnxjs/components'
 import './listItem.<%= cssExt %>'
 
 <%if (locals.typescript) {-%>

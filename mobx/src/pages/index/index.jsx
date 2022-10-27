@@ -1,11 +1,11 @@
 <%if (locals.typescript) {-%>
 import { ComponentType } from 'react'
-import Taro, { Component, Config } from '@tarojs/taro'
+import Vnmf, { Component, Config } from '@vnxjs/vnmf'
 <%} else { -%>
-import Taro, { Component } from '@tarojs/taro'
+import Vnmf, { Component } from '@vnxjs/vnmf'
 <%}-%>
-import { View, Button, Text } from '@tarojs/components'
-import { observer, inject } from '@tarojs/mobx'
+import { View, Button, Text } from '@vnxjs/components'
+import { observer, inject } from '@vnxjs/mobx'
 
 import './<%= pageName %>.<%= cssExt %>'
 
@@ -30,7 +30,7 @@ class <%= _.capitalize(pageName) %> extends Component {
 
 <%if (locals.typescript) {-%>
   /**
-   * 指定config的类型声明为: Taro.Config
+   * 指定config的类型声明为: Vnmf.Config
    *
    * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
    * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string

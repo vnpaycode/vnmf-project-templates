@@ -1,9 +1,9 @@
 <%if (locals.typescript) {-%>
-import Taro, { Component, Config } from '@tarojs/taro'
+import Vnmf, { Component, Config } from '@vnxjs/vnmf'
 <%} else { -%>
-import Taro, { Component } from '@tarojs/taro'
+import Vnmf, { Component } from '@vnxjs/vnmf'
 <%}-%>
-import { Provider } from '@tarojs/mobx'
+import { Provider } from '@vnxjs/mobx'
 import Index from './pages/index'
 
 import counterStore from './store/counter'
@@ -24,7 +24,7 @@ class App extends Component {
 
 <%if (locals.typescript) {-%>
   /**
-   * 指定config的类型声明为: Taro.Config
+   * 指定config的类型声明为: Vnmf.Config
    *
    * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
    * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
@@ -62,4 +62,4 @@ class App extends Component {
   }
 }
 
-Taro.render(<App />, document.getElementById('app'))
+Vnmf.render(<App />, document.getElementById('app'))

@@ -1,2 +1,2 @@
-# taro-project-templates
-Templates for `taro init`
+# vnmf-project-templates
+Templates for `vnmf init`
